@@ -52,5 +52,4 @@ RUN cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini \
 && rm -r swoole \
 && docker-php-ext-enable swoole \
 && apk del --no-network .build-deps \
-&& echo "[Date]\ndate.timezone=${TIMEZONE}" > /usr/local/etc/php/conf.d/timezone.ini \
-&& echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
+&& echo "[Date]\ndate.timezone=${TIMEZONE}" > /usr/local/etc/php/conf.d/timezone.ini 
