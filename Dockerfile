@@ -4,6 +4,7 @@ ENV PHPREDIS_VERSION=4.3.0 \
     SWOOLE_VERSION=4.3.5 \
     TIMEZONE="Asia/Shanghai"
 
+
 RUN cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini \
 && sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
 && apk update \
